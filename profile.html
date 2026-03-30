@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Editor</title>
+
+    <script
+    id="search-js"
+    defer
+    src="https://api.mapbox.com/search-js/v1.0.0-beta.22/web.js">
+</script>
+<script>
+    const script = document.getElementById('search-js');
+    script.onload = function() {
+        mapboxsearch.autofill({
+            accessToken: 'pk.eyJ1IjoidGFubmVybTQyOSIsImEiOiJjbTd6OXNzcmswaDFnMmpvamZwZmNwMmdxIn0.2XdzpVErWz9BA-Y3U9uBJg'
+        });
+    };
+</script>
+    
+</head>
+<body>
+
+    <form action="google.com" method="get">
+
+        <input
+        name="address" placeholder="Address" type="text"
+        autocomplete="address-line1"
+    />
+     
+    <input
+        name="apartment" placeholder="Apartment number" type="text"
+        autocomplete="address-line2"
+    /> 
+    <input
+        name="city" placeholder="City" type="text"
+        autocomplete="address-level2"
+    />
+
+
+
+     </form>
+     
+</body>
+</html>
